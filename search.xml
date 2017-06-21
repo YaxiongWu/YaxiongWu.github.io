@@ -3,90 +3,104 @@
   
     
     <entry>
-      <title><![CDATA[STM32]]></title>
-      <url>/2017/06/20/STM32/</url>
-      <content type="html"><![CDATA[<p>test<br><img class="K.jpg"></p>
-<img src="/2017/06/20/STM32/K.jpg" alt="K.jpg" title="">
-]]></content>
-      
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[物联网]]></title>
-      <url>/2017/06/19/%E7%89%A9%E8%81%94%E7%BD%91/</url>
-      <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<a id="more"></a>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p><strong>内容</strong></p>
-<h2 id="Quick-Start23"><a href="#Quick-Start23" class="headerlink" title="Quick Start23"></a>Quick Start23</h2><ul>
-<li>q</li>
+      <title><![CDATA[本博客的编辑格式说明]]></title>
+      <url>/2017/06/21/%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BC%96%E8%BE%91%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E/</url>
+      <content type="html"><![CDATA[<p>本博客采用Hexo + hexo-themes-bubuzou来搭建，核心的格式是markdown，但Hexo也有扩展，bubuzou主题也有少部分扩展，所以要分成这三个部分来说明编辑格式。</p>
+<h2 id="1-markdown格式"><a href="#1-markdown格式" class="headerlink" title="1. markdown格式"></a>1. markdown格式</h2><h3 id="1-1-标题"><a href="#1-1-标题" class="headerlink" title="1.1 标题"></a>1.1 标题</h3><p>只要在文字前加#就可以表示标题</p>
+<pre><code># 一级标题
+## 二级标题
+</code></pre><p>bubuzou主题自动生成文章段落结构只支持两级标题</p>
+<h3 id="1-2-列表"><a href="#1-2-列表" class="headerlink" title="1.2 列表"></a>1.2 列表</h3><p>列表的显示只需要在文字前加上 - 或 * 即可变为无序列表，有序列表则直接在文字前加1. 2. 3. 符号要和文字之间加上一个字符的空格。</p>
+<ol>
+<li>1</li>
 <li>2</li>
-<li>3<br><strong>注意：</strong>  </li>
-</ul>
-<p>1在ECMAScript 5的strict模式下，这种情况的<code>this</code>已经被规定不会指向全局对象了，而是<code>undefined</code></p>
-<div class="tip"><br>    <strong>注意：</strong>  <p><br><br>    1在ECMAScript 5的strict模式下，这种情况的<code>this</code>已经被规定不会指向全局对象了，而是<code>undefined</code><br></p></div>
-
-
-<h2 id="1-sdfa"><a href="#1-sdfa" class="headerlink" title="1.sdfa"></a>1.sdfa</h2><h3 id="1-1-sdfadf"><a href="#1-1-sdfadf" class="headerlink" title="1.1 sdfadf"></a>1.1 sdfadf</h3><h3 id="1-2-sdfadf"><a href="#1-2-sdfadf" class="headerlink" title="1.2 sdfadf"></a>1.2 sdfadf</h3><h2 id="2-galjbl"><a href="#2-galjbl" class="headerlink" title="2. galjbl"></a>2. galjbl</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<li>3</li>
+</ol>
+<h3 id="1-3-引用"><a href="#1-3-引用" class="headerlink" title="1.3 引用"></a>1.3 引用</h3><p>只需要在文本前加入 &gt; 这种尖括号（大于号）即可。<br>效果:</p>
+<blockquote>
+<p>引用的样子</p>
+</blockquote>
+<h3 id="1-4-插入链接和图片"><a href="#1-4-插入链接和图片" class="headerlink" title="1.4 插入链接和图片"></a>1.4 插入链接和图片</h3><p>插入链接与插入图片的语法很像，区别在一个 !号</p>
+<pre><code>链接格式：[链接的文字](http://地址  &quot;鼠标移上去时的气泡提示&quot;)
+</code></pre><p>效果:<br><a href="http://www.sina.com.cn" title="提示：" target="_blank" rel="external">新浪</a></p>
+<pre><code>图片格式：![图片](http://mouapp.com/Mou_128.png)
+</code></pre><p>效果:<br><img src="http://mouapp.com/Mou_128.png" alt="图片"></p>
+<p>但是这里只能引用网络上的图片，Hexo可以实现按相对地址加载图片，只需在source文件下建一个文件夹images，把图片放进去，将引用地址改成(/images/图片名称.jpg):<br>    <img src="/images/201706211652_小狗.jpg" alt="图片"></p>
+<h3 id="1-5-斜体和粗体"><a href="#1-5-斜体和粗体" class="headerlink" title="1.5 斜体和粗体"></a>1.5 斜体和粗体</h3><p>用两个 <em> 包含一段文本就是粗体的语法，用一个 </em> 包含一段文本就是斜体的语法。<br>效果:</p>
+<p><strong>粗体</strong>  <em>斜体</em></p>
+<h3 id="1-6-表格"><a href="#1-6-表格" class="headerlink" title="1.6 表格"></a>1.6 表格</h3><p>表格的格式如下</p>
+<pre><code>| Tables        | Are           | Cool  |
+| ------------- |-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+</code></pre><p>效果:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Header One</th>
-<th style="text-align:left">Header Two</th>
+<th>Tables</th>
+<th style="text-align:right">Are</th>
+<th style="text-align:center">Cool</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Item One</td>
-<td style="text-align:left">Item Two</td>
+<td>col 3 is</td>
+<td style="text-align:right">right-aligned</td>
+<td style="text-align:center">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:right">centered</td>
+<td style="text-align:center">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:right">are neat</td>
+<td style="text-align:center">$1</td>
 </tr>
 </tbody>
 </table>
-<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
-<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">array.map(callback[, thisArg])</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.compact([0, 1, false, 2, &apos;&apos;, 3]);</div><div class="line">=&gt; [1, 2, 3]</div></pre></td></tr></table></figure>
-<blockquote class="pullquote [class]"><p>pullquote content</p>
-</blockquote>
-<p><img src="/images/D.jpg" alt=""></p>
-<img src="/images/D.jpg">
-<p>wuyaxiong</p>
-]]></content>
-      
-        <categories>
-            
-            <category> categories1 </category>
-            
-            <category> categories12 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> tags1 </tag>
-            
-            <tag> tags2 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>/2017/06/19/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h3 id="1-7-代码框"><a href="#1-7-代码框" class="headerlink" title="1.7 代码框"></a>1.7 代码框</h3><p>如果需要在文章里优雅的引用代码框，只需要用两个 ` 把中间的代码包裹起来，但是由于代码中存在各种符号和格式会干扰markdown格式，在hexo的格式中会有更好效果的格式。</p>
+<h3 id="1-8-分割线"><a href="#1-8-分割线" class="headerlink" title="1.8 分割线"></a>1.8 分割线</h3><p>分割线的语法只需要三个 * 号，标准的markdown格式可以实现，但是这个主题下不能实现</p>
+<p>关于mardown格式更加详细说明，可以参考这个网址<br><a href="http://www.appinn.com/markdown/basic.html" target="_blank" rel="external">markdown格式中文简洁版</a><br><a href="http://wowubuntu.com/markdown" target="_blank" rel="external">markdown格式详细中文版</a></p>
+<h2 id="2-Hexo格式"><a href="#2-Hexo格式" class="headerlink" title="2. Hexo格式"></a>2. Hexo格式</h2><p>Hexo自己扩展了很多标签，可以通过官网说明 <a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="external">标签插件</a>来查看详细的说明。</p>
+<h3 id="2-1-引用块"><a href="#2-1-引用块" class="headerlink" title="2.1 引用块"></a>2.1 引用块</h3><p>Hexo的引用块可以实现很多不同的需求，可以在文章中插入引言，可包含作者、来源和标题。</p>
+<pre><code>{% blockquote [author[, source]] [link] [source_link_title] %}
+	content
+	{% endblockquote %}
+</code></pre><p>比如：</p>
+<pre><code>{% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
+    Every interaction is both precious and an opportunity to delight.
+	{% endblockquote %}
+</code></pre><p>效果是这样的：<br><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote></p>
+<h3 id="2-2-代码块"><a href="#2-2-代码块" class="headerlink" title="2.2 代码块"></a>2.2 代码块</h3><p>Hexo的代码块格式：</p>
+<pre><code>{% codeblock [title] [lang:language] [url] [link text] %}
+	code snippet
+	{% endcodeblock %}
+</code></pre><p>比如：</p>
+<pre><code>{% codeblock _.compact http://underscorejs.org/#compact Underscore.js %}
+    _.compact([0, 1, false, 2, '', 3]);
+	=> [1, 2, 3]
+	{% endcodeblock %}
+</code></pre><p>效果：</p>
+<figure class="highlight plain"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">_.compact([0, 1, false, 2, &apos;&apos;, 3]);</div><div class="line">=&gt; [1, 2, 3]</div></pre></td></tr></table></figure>
+<h3 id="2-3-图片"><a href="#2-3-图片" class="headerlink" title="2.3 图片"></a>2.3 图片</h3><p>在文章中插入指定大小的图片。<br>格式：</p>
+<pre><code>{% img [class names] /path/to/image [width] [height] [title text [alt text]] %}
+</code></pre><p>比如：</p>
+<pre><code>{% img /images/201706211652_小狗.jpg 200 200 提示 %}
+</code></pre><p>效果：</p>
+<img src="/images/201706211652_小狗.jpg" width="200" height="200" title="提示">
+<h3 id="2-4-查看更多内容"><a href="#2-4-查看更多内容" class="headerlink" title="2.4 查看更多内容"></a>2.4 查看更多内容</h3><p>如果只显示文章的一部分，剩余的部分可以通过<br>    <a id="more"></a><br>来查看</p>
+<h3 id="2-4-其他"><a href="#2-4-其他" class="headerlink" title="2.4 其他"></a>2.4 其他</h3><p>其他如Frame、视频、引用文章等可以通过<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="external">标签插件</a>来查看。</p>
+<h2 id="3-bubuzou主题"><a href="#3-bubuzou主题" class="headerlink" title="3. bubuzou主题"></a>3. bubuzou主题</h2><p>可以查看<a href="https://github.com/Bulandent/hexo-theme-bubuzou/blob/master/doc/doc-zh.md" target="_blank" rel="external">bubuzou主题的中文说明文档</a>来获得更多信息。</p>
+<h3 id="3-1-警告块"><a href="#3-1-警告块" class="headerlink" title="3.1 警告块"></a>3.1 警告块</h3><pre><code>主题格式里主要是加了一警告块，这也是如何插入HTML格式的一个实例。
+</code></pre><p>  格式如下：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;tip&quot;&gt;</div><div class="line">   ** 警告**&lt;p&gt;</div><div class="line">   	这是一个警告实例。</div><div class="line">&lt;/div&gt; </div></pre></td></tr></table></figure>
+<p>效果：</p>
+<div class="tip"><br>    <strong>警告</strong><p><br>        这是一个警告实例。<br></p></div>
+
 ]]></content>
       
         
