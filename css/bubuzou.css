@@ -17,7 +17,9 @@ body {
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
     display: block
 }
-
+article {
+  margin-left: 10px;
+}
 audio,canvas,progress,video {
     display: inline-block;
     vertical-align: baseline
@@ -204,7 +206,7 @@ body {
     color: #333;
     font-size: 15px;
     line-height: 1.6;
-    background-color: #fff;
+    background-color:  #f2f2f2;
     font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -320,8 +322,15 @@ header .nav-list-item .active {
 }
 .home.post-list .post-list-item {
     padding: 1em 0 2em;
-    border-bottom: 1px solid #ddd;
-}
+    //border-bottom: 4px solid #ddd;
+    //border-left: 6px solid #ddd;
+    margin-bottom: 8px;
+    background-color: #fff;
+    position: relative;
+    -webkit-box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+
+  }
  .nav-list-item a {
     position: relative;
     display: inline-block;
@@ -389,15 +398,20 @@ header .nav-list-item .active {
 }
 .post-block .post-title {
     margin: 0.65em 0;
-    font-size: 18px;
+    font-size: 28px;
     display: block;
+    //border-bottom: 2px solid #222222;
+    text-shadow:3px 3px 3px #cccccc;
+    text-decoration:underline;
 }
 .post .post-block .post-title {
-    font-size: 20px;
+    font-size: 28px;
     color: #41b883;
+    text-shadow:5px 5px 5px #dddddd;
+    text-decoration:underline;
 }
 .post-block .post-title a {
-    color: #333;
+    color: #444444;
 }
 .post-block .post-title a:hover {
     color: #41b883;
@@ -406,7 +420,7 @@ header .nav-list-item .active {
     color: #7f8c8d;
     margin: 1.2em 0;
     font-family: Georgia, serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 .post-block .post-info span {
     margin-left: 0.5rem
@@ -430,10 +444,10 @@ header .nav-list-item .active {
     color: #4e4a4a;
 }
 .post-content h2 {
-    font-size: 18px
+    font-size: 24px
 }
 .post-content h3 {
-    font-size: 17px
+    font-size: 20px
 }
 .post-content h4 {
     font-size: 16px
@@ -957,10 +971,10 @@ footer .copyright a:hover {
     color: #333;
 }
 .widget a:hover {
-    color: #41b883; 
-} 
+    color: #41b883;
+}
 .widget .category-list-count {
-    font-size: 14px;
+    font-size: 16px;
     color: #999;
     padding-left: 3px;
     font-family: Georgia, serif;
