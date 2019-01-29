@@ -47,4 +47,5 @@ class Scratch3WuyaxiongBlocks {
     }
 }
 
-module.exports = Scratch3WuyaxiongBlocks;
+//module.exports = Scratch3WuyaxiongBlocks;
+Scratch.extensions.register(new Scratch3WuyaxiongBlocks());
